@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1719091787213,
+      "tag": "0000_charming_gargoyle",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1719157303845,
+      "tag": "0001_calm_christian_walker",
+      "breakpoints": true
+    }
+  ]
+}
