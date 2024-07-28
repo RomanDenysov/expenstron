@@ -15,6 +15,20 @@
       "when": 1719157303845,
       "tag": "0001_calm_christian_walker",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1719508259241,
+      "tag": "0002_tiny_strong_guy",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1719518862868,
+      "tag": "0003_wild_pestilence",
+      "breakpoints": true
     }
   ]
 }

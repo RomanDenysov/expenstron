@@ -7,5 +7,5 @@ type ContentWrapperProps = {
 }
 
 export default function ContentWrapper({children, className}: ContentWrapperProps) {
-  return <div className={cn('max-w-7xl w-full h-full mx-auto', className)}>{children}</div>
+  return <div className={cn('max-w-screen-xl size-full mx-auto px-2.5', className)}>{children}</div>
 }

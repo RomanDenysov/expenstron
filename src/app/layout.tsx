@@ -3,6 +3,7 @@ import MainProvider from '@/providers'
 import {ClerkProvider} from '@clerk/nextjs'
 import type {Metadata} from 'next'
 import {Poppins} from 'next/font/google'
+import {Toaster} from 'sonner'
 import './globals.css'
 
 const poppins = Poppins({style: 'normal', weight: '400', subsets: ['latin']})
@@ -22,11 +23,14 @@ export default function RootLayout({
       <html lang="en" suppressHydrationWarning>
         <body
           className={cn(
-            'w-full h-full antialiased bg-blue-100 tracking-tight leading-relaxed',
+            'w-full h-full antialiased min-h-screen tracking-tight leading-relaxed',
             poppins.className,
           )}
         >
-          <MainProvider>{children}</MainProvider>
+          <MainProvider>
+            <Toaster />
+            {children}
+          </MainProvider>
         </body>
       </html>
     </ClerkProvider>

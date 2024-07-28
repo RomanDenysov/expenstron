@@ -1,11 +1,16 @@
+'use client'
+
 import ContentWrapper from '@/components/common/ContentWrapper'
 import {Button} from '@/components/ui/button'
+import {useNewAccount} from '@/features/accounts/hooks/use-new-account'
 
 export default function Home() {
+  const {onOpen} = useNewAccount()
+
   return (
-    <ContentWrapper className="bg-gray-300">
-      <center className="py-20 h-full bg-gray-200">
-        <Button>Test</Button>
+    <ContentWrapper className="">
+      <center className="py-20 h-full">
+        <Button onClick={onOpen}>Test</Button>
       </center>
     </ContentWrapper>
   )
